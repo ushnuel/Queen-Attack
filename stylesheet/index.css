@@ -1,0 +1,52 @@
+.chess-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.message p {
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(32, 31, 31, 0.6);
+}
+table {
+  border-collapse: collapse;
+}
+
+table,
+td {
+  border: 1px solid black;
+}
+td {
+  width: 50px;
+  height: 50px;
+}
+tr:nth-child(odd) td:nth-child(even) {
+  background: black;
+}
+tr:nth-child(even) td:nth-child(odd) {
+  background: black;
+}
+@media all and (max-width: 425px) {
+  td {
+    width: 25px;
+    height: 25px;
+  }
+
+  .message p {
+    font-size: 8px;
+  }
+}
